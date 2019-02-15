@@ -7,8 +7,8 @@ puis commit sur ce git. Si tu me donnes ton git User, je te rajoute sur le Répo
 
 
 # mission : 
-Réaliser la partie GAUCHE de l'écran seulement avec :
-- RxAndroid (RxJava2)
+Réaliser la partie GAUCHE de l'écran avec :
+- RxAndroid 
 - DataBinding si possible mais pas obligatoire (https://developer.android.com/topic/libraries/data-binding/)
 - ConstraintLayout
 
@@ -23,7 +23,7 @@ Les points utilisés sont débités du totals disponibles (Tags).
 
 pour l'exercice : 
 Toutes les barres commencent au niveau 1 à 0/2000.
-Le nombre de points disponible (Tags) à distribuer au début  est de 5000. Quand le total arrive a 0, les '+' disparaissent. Il n'est pas possible de retirer des points.
+Le nombre de points disponible (Tags) à distribuer au début est de 5000. Quand le total arrive a 0, les '+' disparaissent. 
 
 
 Police d'écriture libre
