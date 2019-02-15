@@ -1,7 +1,10 @@
 # fichiers 
 la maquette : `maquette.png`
 
-# Réalisation : Faire une application android avec 1 seule activité qui affiche la partie GAUCHE (la partie avec les barres de niveaux) 
+# Réalisation : 
+Faire une application android avec 1 seule activité qui affiche la partie GAUCHE (la partie avec les barres de niveaux)
+puis commit sur ce git. Si tu me donnes ton git User, je te rajoute sur le Répo, sinon tu dois faire un pull request.
+
 
 # mission : 
 Réaliser la partie GAUCHE de l'écran seulement avec :
