@@ -27,6 +27,7 @@ Le nombre de points disponible (Tags) à distribuer au début  est de 5000. Quan
 
 
 Police d'écriture libre
+ne pas se soucier du côté "arrondi" du design, fais un écran rectangulaire classique.
 tu peux mettre un boutton standard pour les '+'
 Ne passes pas trop de temps sur l'exercice. Si c'est trop long, tu peux faire qu'une seule barre.
 temps estimé : 1h-3h
