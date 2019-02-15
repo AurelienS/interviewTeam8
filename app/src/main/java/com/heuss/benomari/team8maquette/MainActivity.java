@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private Disposable disposable;
     private TextView tags;
     private int strength_points = 1;
-    private int tags_points=5000;
+    private int tags_points = 5000;
     private TextView strength_level;
 
 
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void configureLevelUp(){
+    private void configureLevelUp() {
         strength_level.setText(Integer.toString(strength_points));
     }
 
@@ -71,17 +71,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private Observable<Integer> getObservable() {
-        if (progressBar.getProgress() == 50){
+        if (progressBar.getProgress() == 50) {
             return Observable.just(100);
 
         }
-        if (progressBar.getProgress() == 100){
+        if (progressBar.getProgress() == 100) {
             return Observable.just(50);
-        }else{
+        } else {
             return Observable.just(50);
         }
-
-
 
 
     }
@@ -95,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
                 progressBar.setProgress(item);
 
             }
+
             @Override
             public void onError(Throwable e) {
                 Log.e("TAG", "On Error" + Log.getStackTraceString(e));
@@ -112,13 +111,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void streamUpdateProgress(){
+    private void streamUpdateProgress() {
         this.disposable = this.getObservable()
                 .subscribeWith(getSubscriber());
-        }
+    }
 
 
-    private void disposeWhenDestroy(){
+    private void disposeWhenDestroy() {
         if (this.disposable != null && !this.disposable.isDisposed()) this.disposable.dispose();
 
     }
@@ -129,12 +128,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 usePoint();
-                if (progressBar.getProgress() == 100){
+                if (progressBar.getProgress() == 100) {
                     levelUp();
                 }
                 streamUpdateProgress();
                 tags.setText(Integer.toString(tags_points));
-                if (Integer.toString(tags_points).equals(Integer.toString(0))){
+                if (Integer.toString(tags_points).equals(Integer.toString(0))) {
                     button_strength.setVisibility(View.INVISIBLE);
                     strength_level.setText(Integer.toString(strength_points));
 
@@ -142,25 +141,21 @@ public class MainActivity extends AppCompatActivity {
                 }
 
 
-
-
-
             }
         });
     }
 
-    private void usePoint(){
+    private void usePoint() {
         tags_points = tags_points - 1000;
 
-        }
-        private void levelUp(){
+    }
+
+    private void levelUp() {
         strength_points++;
         strength_level.setText(Integer.toString(strength_points));
 
 
-
     }
-
 
 
 }
